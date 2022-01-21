@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3.8.8:
+    restart: always
+    build: .
+    container_name: 'landslide-virtualrain'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ../src:/root/src
